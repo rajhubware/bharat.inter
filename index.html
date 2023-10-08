@@ -2,303 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Bhushan</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@400;700&family=Quicksand:wght@300&display=swap"
-        rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter Website using html, css & JavaScript</title>
+    <!-- css link -->
+    <link rel="designsheet" href="css/designs.css" />
 
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
+    <!-- box icons -->
+    <link rel="designsheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(18, 18, 62);
-        }
+    <!-- font awesome -->
+    <link rel="designsheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgb(153, 153, 226);
-            font-size: 1.01rem;
-        }
-
-        main hr {
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 60px 84px;
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 130px 0;
-
-        }
-
-        .firstSection>div {
-            width: 33%;
-        }
-
-        .leftSection {
-            font-size: 3rem;
-        }
-
-        .leftSection .buttons {
-            padding: 50px 0;
-        }
-
-        .leftSection .btn {
-            padding: 12px;
-            background: #1e2167;
-            color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .rightSection img {
-            width: 80%;
-        }
-
-        .purple {
-            color: rgb(170, 107, 228);
-        }
-
-        .text-gray {
-            color: gray;
-        }
-
-        #element {
-            color: rgb(170, 107, 228);
-        }
-
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-
-        .secondSection h1 {
-            font-size: 1.9rem;
-        }
-
-        .secondSection .box {
-            background: white;
-            width: 63vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-
-        .secondSection .vertical {
-            height: 93px;
-            width: 1px;
-            background: white;
-            margin: 0 120px;
-
-        }
-
-        .image-top {
-            width: 23px;
-            position: relative;
-            top: -32px;
-            left: -9px;
-        }
-
-        .vertical-title {
-            position: relative;
-            top: 75px;
-            width: 150px;
-            font-size: 14px;
-        }
-
-        .vertical-desc {
-            position: relative;
-            top: 86px;
-            color: gray;
-            width: 150px;
-            font-size: 9px;
-        }
-
-
-        footer {
-            background-color: #0e0e1a;
-        }
-
-        .footer {
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
-
-        .footer ul {
-            list-style: none;
-        }
-
-        .footer>div {
-            width: 223px;
-        }
-
-        footer .footer-rights {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
-    </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">Raj Bhushan's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hi, My name is <span class="purple">Raj</span>
-                <div>and I am passionate</div>
-                <span id="element"></span>
-                <div class="buttons">
-
-                    <a href="https://drive.google.com/file/d/1LpRdjpoVTQRrxuIEAZRVE8eIjAcQu8NL/view?usp=sharing"
-                        target="_blank">
-                        <buttons class="btn">Download resume</buttons>
-                    </a>
-                    <a href="https://www.linkedin.com/in/raj-bhushan-9555a222b/" target="_blank">
-                        <buttons class="btn">Visit LinkedIn</buttons>
-                    </a>
+    <div class="container">
+        <div class="temperature-converter">
+            <div class="mobile">
+                <p class="time">23.45 PM</p>
+                <div>
+                    <i class='bx bx-signal-4'></i>
+                    <i class='bx bx-wifi'></i>
+                    <i class='bx bxs-battery'></i>
                 </div>
             </div>
-            <div class="rightSection">
-                <img src="bg-png.webp" alt="">
-            </div>
-        </section>
 
-        <hr>
-        <section class="secondSection">
-            <span class="text-gray">What I have done so far</span>
-            <h1>Past Experience</h1>
-            <div class="box">
-                <div class="vertical"><img class="image-top" src="ws.  png" alt="">
-                    <div class="vertical-title">
-                        +2 (2020-2021)
-                    </div>
-                    <div class="vertical-desc">In this time period I have completed my school with 62%.</div>
-                </div>
-                <div class="vertical"><img class="image-top" src="ws.  png" alt="">
-                    <div class="vertical-title">
-                        Graduation (2021-2025)
-                    </div>
-                    <div class="vertical-desc">I joined Chandgarh University under Computer Science and Engineering
-                        program. Currently my CGPA is 6.8</div>
-                </div>
-                <div class="vertical"><img class="image-top" src="ws.  png" alt="">
-                    <div class="vertical-title">
-                        Web Developer (2022)
-                    </div>
-                    <div class="vertical-desc">I joined a Bharat Intern as a Web Developer (Oct 2023)</div>
-                </div>
-                <div class="vertical"><img class="image-top" src="ws.  png" alt="">
-                    <div class="vertical-title">
-                        DSA (2023)
-                    </div>
-                    <div class="vertical-desc">Currently learning a new skill Data Sturctures and Algorithms</div>
+            <h1 class="title">Temperature Converter</h1>
+
+            <div class="result">
+                <span class="result-heading">Result (Celsius)</span>
+                <h2 class="celsius-value" id="celsius"></h2>
+            </div>
+
+            <!-- input field -->
+            <div class="degree-type">
+                <!-- for degrees -->
+                <div class="degree-field">
+                    <label for="degree">Degrees</label>
+                    <input type="number" name="degree" id="degree" />
                 </div>
 
+                <!-- for option selection -->
+                <div class="temp-field">
+                    <label for="temp-type">Type</label>
+                    <select name="temperatures" id="temp-type" autocomplete="on">
+                        <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+                        <option id="kelvin" value="kelvin">Kelvin</option>
+                    </select>
+                </div>
             </div>
-            </div>
-        </section>
-    </main>
+            <button id="convert-btn">Convert</button>
 
-    <footer>
-        <div class="footer">
-            <div class="footer-first">
-                <h3>Raj's Developer Portfolio</h3>
-            </div>
-            <div class="footer-second">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="footer-third">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="footer-fourth">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
         </div>
-        <div class="footer-rights">
-            copyright &#169; rajportfolio.com | All rights reserved
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer.', 'about DSA.'],
-            typeSpeed: 50,
-
-        });
-    </script>
+    </div>
+    <!-- script tags -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>
